@@ -1,5 +1,9 @@
+html {
+    overflow-y: hidden;
+}
 body {
-    background-color: grey;
+    background-color:  #b3b3a7;
+    
 }
 
 .columns {
@@ -53,15 +57,20 @@ body {
         font-size: 16px;
         font-family: 'Ubuntu Mono', monospace;
     }
-    /* .side-info {
-        font-weight: bolder;
-    } */
+
 
     .more-info {
         font-family: 'Poppins', sans-serif;
         margin-top: 20px;
         font-size: 12px;
         line-height: 2.2em;
+    }
+
+    .latest {
+        font-family: 'Poppins', sans-serif;
+        font-size: 26px;
+        text-align: center;
+        font-weight: bolder;
     }
 
     .project-info {
@@ -84,6 +93,9 @@ body {
     }
 
     @media only screen and (max-width: 768px) {
+        html {
+            overflow-y: visible;
+        }
       body {
           background-color: white;
       }
@@ -112,19 +124,28 @@ body {
       }
       }
 
-      @media only screen and (min-width:768px) and (max-width: 1212px) {
+      @media only screen and (min-width:768px) and (max-width: 1210px) {
+
+          .sec-col {
+              overflow-y:scroll;
+          }
+
+          .latest {
+              font-size: 14px;
+          }
+  
         .project-info {
             padding:10px 40px 10px 50px;
             font-size: 12px;
         }
     
         .project-head {
-            font-size: 16px;
+            font-size: 14px;
         
         }
     
         .source-code {
-            margin-top: 6px;
+            margin-top: 3px;
             font-size: 12px;
             
         }
